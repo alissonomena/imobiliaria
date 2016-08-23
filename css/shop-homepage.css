@@ -26,6 +26,20 @@ body {
     background-color: #fff;
 }
 
+.carousel-holder-property {
+	background: #ddd;
+}
+
+.carousel.slide {
+	margin: 20px 0;
+}
+
+.filter-property {
+	margin: 20px 0;
+    padding: 15px;
+	background: #fff;
+}
+
 p.text-right {
 	color: #fff;
 	font-family: "Droid Serif",serif;

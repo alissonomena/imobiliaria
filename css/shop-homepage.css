@@ -1,0 +1,80 @@
+/*!
+ * Start Bootstrap - Shop Homepage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 20px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.bg {
+	background: rgba(0, 0, 0, 0) url("../images/bg.png") repeat scroll 0 0;
+}
+
+.navbar-top-menu {
+	min-height: 120px !important;
+	margin-bottom: 0 !important;
+	text-shadow: 1px 1px #000;
+}
+
+.navbar-center-menu .navbar-toggle {
+	border-color: #333;
+}
+
+.navbar-center-menu .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+p.text-right {
+	color: #fff;
+	font-family: "Droid Serif",serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+footer {
+    margin: 50px 0;
+}

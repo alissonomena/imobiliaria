@@ -2,8 +2,8 @@
 BLOCOS QUE PRECISAM DE EDIÇÃO PELO USUÁRIO PUXANDO DADOS DO ADMIN:
 	- BLOCO 1: PUXAR TELEFONE, HORARIO DE ATENDIMENTO E EMAIL;
 	- BLOCO 2: PUXAR FOTOS PRINCIPAIS DE CADA PROPRIEDADE, PUXAR A QUANTIDADE DE PROPRIEDADES A SER MOSTRADA, AS IMAGENS DEVEM TER O TAMANHO 800x500;
-	- BLOCO 3:
-	- BLOCO 4:
+	- BLOCO 3: PUXAR OS FILTROS DO BANCO. FAZER O CADASTRO DESSES FILTROS NO ADMIN;
+	- BLOCO 4: PUXAR DADOS DAS PROPRIEDADES DO BANCO (12 PROPRIEDADES);
 	- BLOCO 5:
 	- BLOCO 6:
 -->
@@ -71,8 +71,8 @@ BLOCOS QUE PRECISAM DE EDIÇÃO PELO USUÁRIO PUXANDO DADOS DO ADMIN:
 		
 			<!-- Navigation -->
 			<nav class="navbar navbar-center-menu" role="navigation">
-				<div class="container">
-					<div class="col-md-1"></div>
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span>
@@ -82,7 +82,7 @@ BLOCOS QUE PRECISAM DE EDIÇÃO PELO USUÁRIO PUXANDO DADOS DO ADMIN:
 						</button>
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
+						<ul class="nav navbar-nav navbar-menu-link">
 							<li>
 								<a href="#">Home</a>
 							</li>
@@ -100,8 +100,8 @@ BLOCOS QUE PRECISAM DE EDIÇÃO PELO USUÁRIO PUXANDO DADOS DO ADMIN:
 							</li>
 						</ul>
 					</div>
-					<div class="col-md-1"></div>
 				</div>
+				<div class="col-md-1"></div>
 			</nav>
 			<!-- /.Navigation -->
 
@@ -140,6 +140,8 @@ BLOCOS QUE PRECISAM DE EDIÇÃO PELO USUÁRIO PUXANDO DADOS DO ADMIN:
 					
 					<div class="col-md-4">
 						<div class="filter-property">
+							<p class="property-top-search text-center">Buscar Imóveis</p>
+							<!-- BLOCO 3 -->
 							<div class="bfh-selectbox" data-name="selectbox2" data-value="12">
 								<div data-value="1">Option 1</div>
 								<div data-value="2">Option 2</div>
@@ -165,29 +167,36 @@ BLOCOS QUE PRECISAM DE EDIÇÃO PELO USUÁRIO PUXANDO DADOS DO ADMIN:
 								<div data-value="2">Option 2</div>
 								<div data-value="3">Option 3</div>
 							</div>
+							<button class="btn btn-primary btn-sm">Buscar</button>
+							<!-- FIM BLOCO 3 -->
 						</div>
 					</div>
                 </div>
 
-                <div class="row">
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="row bg-white">
+					
+					<div class="col-sm-12 col-lg-12 col-md-12 bloco-desc">
+						<h2>Imóveis em Itajubá</h2>
+						<p class="text-left">Confira abaixo os últimos imóveis de itajubá adicionado no site, não deixe de conferir todas as categorias para visualizar todos os imóveis</p>
+					</div>
+					<!-- BLOCO 4 -->
+					<div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$24.99</h4>
-                                <h4><a href="#">First Product</a>
-                                </h4>
-                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                                <h4 class="pull-right btn-primary btn-sm">R$24.99</h4>
+                                <h4><a href="#">Apartamento padrão</a></h4>
+                                <p class="text-center">2 Quartos, 1 Banheiro Anhumas, Itajubá, MG</p>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">15 reviews</p>
+                                <p class="pull-right btn-success btn-sm">Venda</p>
                                 <p>
+									<button class="btn btn-warning btn-sm">Detalhes</button>
+                                    <!-- <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span> -->
                                 </p>
                             </div>
                         </div>
@@ -197,19 +206,19 @@ BLOCOS QUE PRECISAM DE EDIÇÃO PELO USUÁRIO PUXANDO DADOS DO ADMIN:
                         <div class="thumbnail">
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$64.99</h4>
-                                <h4><a href="#">Second Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h4 class="pull-right btn-primary btn-sm">R$64.99</h4>
+                                <h4><a href="#">Apartamento padrão</a></h4>
+                                <p class="text-center">2 Quartos, 1 Banheiro Anhumas, Itajubá, MG</p>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">12 reviews</p>
+                                <p class="pull-right btn-danger btn-sm">Locação</p>
                                 <p>
+									<button class="btn btn-warning btn-sm">Detalhes</button>
+                                    <!-- <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span> -->
                                 </p>
                             </div>
                         </div>
@@ -219,19 +228,19 @@ BLOCOS QUE PRECISAM DE EDIÇÃO PELO USUÁRIO PUXANDO DADOS DO ADMIN:
                         <div class="thumbnail">
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$74.99</h4>
-                                <h4><a href="#">Third Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h4 class="pull-right btn-primary btn-sm">R$24.99</h4>
+                                <h4><a href="#">Apartamento padrão</a></h4>
+                                <p class="text-center">2 Quartos, 1 Banheiro Anhumas, Itajubá, MG</p>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">31 reviews</p>
+                                <p class="pull-right btn-success btn-sm">Venda</p>
                                 <p>
+									<button class="btn btn-warning btn-sm">Detalhes</button>
+                                    <!-- <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star"></span> -->
                                 </p>
                             </div>
                         </div>
@@ -241,19 +250,19 @@ BLOCOS QUE PRECISAM DE EDIÇÃO PELO USUÁRIO PUXANDO DADOS DO ADMIN:
                         <div class="thumbnail">
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$84.99</h4>
-                                <h4><a href="#">Fourth Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h4 class="pull-right btn-primary btn-sm">R$64.99</h4>
+                                <h4><a href="#">Apartamento padrão</a></h4>
+                                <p class="text-center">2 Quartos, 1 Banheiro Anhumas, Itajubá, MG</p>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">6 reviews</p>
+                                <p class="pull-right btn-danger btn-sm">Locação</p>
                                 <p>
+									<button class="btn btn-warning btn-sm">Detalhes</button>
+                                    <!-- <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span> -->
                                 </p>
                             </div>
                         </div>
@@ -263,31 +272,185 @@ BLOCOS QUE PRECISAM DE EDIÇÃO PELO USUÁRIO PUXANDO DADOS DO ADMIN:
                         <div class="thumbnail">
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$94.99</h4>
-                                <h4><a href="#">Fifth Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h4 class="pull-right btn-primary btn-sm">R$24.99</h4>
+                                <h4><a href="#">Apartamento padrão</a></h4>
+                                <p class="text-center">2 Quartos, 1 Banheiro Anhumas, Itajubá, MG</p>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">18 reviews</p>
+                                <p class="pull-right btn-success btn-sm">Venda</p>
                                 <p>
+									<button class="btn btn-warning btn-sm">Detalhes</button>
+                                    <!-- <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star"></span> -->
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right btn-primary btn-sm">R$64.99</h4>
+                                <h4><a href="#">Apartamento padrão</a></h4>
+                                <p class="text-center">2 Quartos, 1 Banheiro Anhumas, Itajubá, MG</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right btn-danger btn-sm">Locação</p>
+                                <p>
+									<button class="btn btn-warning btn-sm">Detalhes</button>
+                                    <!-- <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span> -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right btn-primary btn-sm">R$24.99</h4>
+                                <h4><a href="#">Apartamento padrão</a></h4>
+                                <p class="text-center">2 Quartos, 1 Banheiro Anhumas, Itajubá, MG</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right btn-success btn-sm">Venda</p>
+                                <p>
+									<button class="btn btn-warning btn-sm">Detalhes</button>
+                                    <!-- <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span> -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right btn-primary btn-sm">R$64.99</h4>
+                                <h4><a href="#">Apartamento padrão</a></h4>
+                                <p class="text-center">2 Quartos, 1 Banheiro Anhumas, Itajubá, MG</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right btn-danger btn-sm">Locação</p>
+                                <p>
+									<button class="btn btn-warning btn-sm">Detalhes</button>
+                                    <!-- <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span> -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right btn-primary btn-sm">R$24.99</h4>
+                                <h4><a href="#">Apartamento padrão</a></h4>
+                                <p class="text-center">2 Quartos, 1 Banheiro Anhumas, Itajubá, MG</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right btn-success btn-sm">Venda</p>
+                                <p>
+									<button class="btn btn-warning btn-sm">Detalhes</button>
+                                    <!-- <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span> -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right btn-primary btn-sm">R$64.99</h4>
+                                <h4><a href="#">Apartamento padrão</a></h4>
+                                <p class="text-center">2 Quartos, 1 Banheiro Anhumas, Itajubá, MG</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right btn-danger btn-sm">Locação</p>
+                                <p>
+									<button class="btn btn-warning btn-sm">Detalhes</button>
+                                    <!-- <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span> -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right btn-primary btn-sm">R$24.99</h4>
+                                <h4><a href="#">Apartamento padrão</a></h4>
+                                <p class="text-center">2 Quartos, 1 Banheiro Anhumas, Itajubá, MG</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right btn-success btn-sm">Venda</p>
+                                <p>
+									<button class="btn btn-warning btn-sm">Detalhes</button>
+                                    <!-- <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span> -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right btn-primary btn-sm">R$64.99</h4>
+                                <h4><a href="#">Apartamento padrão</a></h4>
+                                <p class="text-center">2 Quartos, 1 Banheiro Anhumas, Itajubá, MG</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right btn-danger btn-sm">Locação</p>
+                                <p>
+									<button class="btn btn-warning btn-sm">Detalhes</button>
+                                    <!-- <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span> -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-sm-4 col-lg-4 col-md-4">
                         <h4><a href="#">Like this template?</a>
                         </h4>
                         <p>If you like this template, then check out <a target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this tutorial</a> on how to build a working review system for your online store!</p>
                         <a class="btn btn-primary" target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">View Tutorial</a>
-                    </div>
-
+                    </div> -->
+					<!-- FIM BLOCO 4 -->
                 </div>
 
             </div>
@@ -301,14 +464,34 @@ BLOCOS QUE PRECISAM DE EDIÇÃO PELO USUÁRIO PUXANDO DADOS DO ADMIN:
 
     <div class="container">
 
-        <hr>
-
-        <!-- Footer -->
+		<!-- Footer -->
         <footer>
             <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+				
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 bg-footer">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-5">
+							<p class="copy text-center">Copyright &copy; 2016 <br> Portal Imóveis Itajubá - Sua imobiliária em Itajubá</p>
+						</div>
+						<div class="col-md-5">
+							<!-- BLOCO 5 -->
+							<h4 class="text-right">Contate-nos</h4>
+							<p class="text-right">
+							(35) 3621-8502 | (35) 9986-0422
+							<br>
+							<br>
+							atendimento@portalimoveisitajuba.com.br
+							<br/>
+							Praça Adolfo Olinto, 70 - Itajubá, MG
+							</p>
+							<!-- FIM BLOCO 5 -->
+						</div>
+						<div class="col-md-1"></div>
+					</div>
                 </div>
+                <div class="col-lg-1"></div>
             </div>
         </footer>
 

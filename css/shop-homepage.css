@@ -18,12 +18,29 @@ body {
 	text-shadow: 1px 1px #000;
 }
 
+.navbar-center-menu {
+	margin-bottom: 0 !important;
+}
+
+.navbar-center-menu .col-md-10 {
+	background: #273549;
+	margin-top: 5px;
+}
+
 .navbar-center-menu .navbar-toggle {
 	border-color: #333;
 }
 
 .navbar-center-menu .navbar-toggle .icon-bar {
     background-color: #fff;
+}
+
+.navbar-menu-link li a {
+	color: #fff;
+}
+
+.navbar-menu-link li a:hover {
+	color: #273549;
 }
 
 .carousel-holder-property {
@@ -38,6 +55,38 @@ body {
 	margin: 20px 0;
     padding: 15px;
 	background: #fff;
+	border-radius: 4px;
+}
+
+.property-top-search {
+    background: rgba(0, 0, 0, 0) url("../images/headline-search.png") no-repeat scroll left center;
+    line-height: 2;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.bg-white {
+	background: #fff;
+	padding-top: 20px;
+}
+
+.bloco-desc {
+	padding-bottom: 20px;
+}
+
+.bloco-desc h2 {
+	font-weight: normal;
+	font-size: 30px;
+	
+}
+
+.bloco-desc p {
+	color: #333;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 p.text-right {
@@ -53,7 +102,7 @@ p.text-right {
 }
 
 .carousel-holder {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .carousel-control,
@@ -62,12 +111,16 @@ p.text-right {
 }
 
 .caption {
-    height: 130px;
+    /* height: 130px; */
     overflow: hidden;
 }
 
 .caption h4 {
     white-space: nowrap;
+}
+
+.caption .btn-primary {
+	background: #273549 !important;
 }
 
 .thumbnail img {
@@ -90,5 +143,20 @@ p.text-right {
 }
 
 footer {
-    margin: 50px 0;
+    margin: 0 0 50px 0;
+}
+
+.bg-footer {
+	background: #273549;
+}
+
+p.copy {
+	color: #ccc;
+	margin-top: 45px;
+}
+
+h4.text-right {
+	color: #ccc;
+	font-size: 14px;
+	text-transform: uppercase;
 }

@@ -8,6 +8,10 @@ body {
     padding-top: 20px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+.clear {
+	clear: both;
+}
+
 .bg {
 	background: rgba(0, 0, 0, 0) url("../images/bg.png") repeat scroll 0 0;
 }
@@ -65,9 +69,29 @@ body {
 	font-size: 18px;
 }
 
+.quick-search {
+	padding: 0 0 20px 0;
+}
+
+.quick-search .filter-property {
+	margin: 0 !important;
+	border-radius: 0 !important;
+	background: #ddd !important;
+}
+
+.quick-search .property-top-search {
+	padding: 3px 0 0 30px;
+}
+
+
+
 .bg-white {
 	background: #fff;
 	padding-top: 20px;
+}
+
+.bg-white-i {
+	background: #fff;
 }
 
 .bloco-desc {
@@ -108,6 +132,20 @@ p.text-right {
 .carousel-control,
 .item {
     border-radius: 4px;
+}
+
+.newsletter .text-left p {
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 2px;
+}
+
+.newsletter .col-sm-8 {
+	padding: 0 !important;
+}
+
+.newsletter button {
+	margin: 2px 0 0 4px	
 }
 
 .caption {
@@ -152,11 +190,41 @@ footer {
 
 p.copy {
 	color: #ccc;
-	margin-top: 45px;
+	margin-top: 18px;
 }
 
 h4.text-right {
 	color: #ccc;
 	font-size: 14px;
 	text-transform: uppercase;
+}
+
+.face {
+	background: rgba(0, 0, 0, 0) url("../images/icon_facebook_g.png") repeat scroll 0 0;
+}
+
+.face:hover {
+	background: rgba(0, 0, 0, 0) url("../images/icon_facebook.png") repeat scroll 0 0;
+	background-size: 38px 38px;
+	width: 38px;
+	height: 38px;
+}
+
+.whats {
+	background: rgba(0, 0, 0, 0) url("../images/icon_whatsapp_g.png") repeat scroll 0 0;
+}
+
+.whats:hover {
+	background: rgba(0, 0, 0, 0) url("../images/icon_whatsapp.png") repeat scroll 0 0;
+	background-size: 38px 38px;
+	width: 38px;
+	height: 38px;
+}
+
+.face, .whats {
+	background-size: 38px 38px;
+	width: 38px;
+	height: 38px;
+	float: left;
+	margin: 20px 5px 0 60px;
 }

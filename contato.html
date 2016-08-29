@@ -1,0 +1,321 @@
+<!--
+BLOCOS QUE PRECISAM DE EDIÇÃO PELO USUÁRIO PUXANDO DADOS DO ADMIN:
+	- BLOCO 1: PUXAR TELEFONE, HORARIO DE ATENDIMENTO E EMAIL;
+	- BLOCO 2: PUXAR FOTOS PRINCIPAIS DE CADA PROPRIEDADE, PUXAR A QUANTIDADE DE PROPRIEDADES A SER MOSTRADA, AS IMAGENS DEVEM TER O TAMANHO 800x500;
+	- BLOCO 3: PUXAR OS FILTROS DO BANCO. FAZER O CADASTRO DESSES FILTROS NO ADMIN;
+	- BLOCO 4: PUXAR DADOS DAS PROPRIEDADES DO BANCO (12 PROPRIEDADES);
+	- BLOCO 5: PUXAR DADOS DE CONTATO DO BANCO;
+	- BLOCO 6: PUXAR DADOS DA PROPRIEDADE DO BANCO;
+	- BLOCO 7:
+-->
+
+<!-- HEADER PARA O ARQUIVO HEADER.PHP -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Shop Homepage - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+
+	<link href="css/bootstrap-formhelpers.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+	
+    <link href="css/forms.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="bg">
+
+    <div class="container">
+        <div class="row">
+			<div class="col-md-1"></div>
+            <div class="col-md-3">
+                <a href="#"><img alt="Portal Imóveis Itajubá - Sua imobiliária em Itajubá" src="images/portal-logo.png"></a>
+            </div>
+            <div class="col-md-7">
+				<!-- BLOCO 1 -->
+				<p class="text-right">
+				(35) 3621-8502 | (35) 9986-0422
+				<br>
+				Segunda à Sexta 09:00h - 12:00h | 13:30 - 18:00h
+				<br>
+				<br>
+				atendimento@portalimoveisitajuba.com.br
+				</p>
+                <!-- FIM BLOCO 1 -->
+            </div>
+			<div class="col-md-1"></div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+	
+        <div class="row">
+		
+			<!-- Navigation -->
+			<nav class="navbar navbar-center-menu" role="navigation">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-menu-link">
+							<li>
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="#">Imóveis</a>
+							</li>
+							<li>
+								<a href="#">Sobre a Portal</a>
+							</li>
+							<li>
+								<a href="#">Divulgue seu imóvel</a>
+							</li>
+							<li>
+								<a href="#">Contato</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</nav>
+			<!-- /.Navigation -->
+			
+			
+			
+			<!-- FIM DO HEADER -->
+
+            <div class="col-md-1"></div>
+            <div class="col-md-10 bg-white-i">
+
+				<!-- BUSCA RAPIDA -->
+				<div class="row">
+					<div class="col-md-12 quick-search">
+						<div class="filter-property ">
+							<p class="property-top-search text-left">Buscar Rápida</p>
+							<!-- BLOCO 3 -->
+							<div class="bfh-selectbox col-sm-2" data-name="selectbox2" data-value="12">
+								<div data-value="1">Option 1</div>
+								<div data-value="2">Option 2</div>
+								<div data-value="3">Option 3</div>
+							</div>
+							<div class="bfh-selectbox col-sm-2" data-name="selectbox2" data-value="12">
+								<div data-value="1">Option 1</div>
+								<div data-value="2">Option 2</div>
+								<div data-value="3">Option 3</div>
+							</div>
+							<div class="bfh-selectbox col-sm-2" data-name="selectbox2" data-value="12">
+								<div data-value="1">Option 1</div>
+								<div data-value="2">Option 2</div>
+								<div data-value="3">Option 3</div>
+							</div>
+							<div class="bfh-selectbox col-sm-2" data-name="selectbox2" data-value="12">
+								<div data-value="1">Option 1</div>
+								<div data-value="2">Option 2</div>
+								<div data-value="3">Option 3</div>
+							</div>
+							<div class="bfh-selectbox col-sm-2" data-name="selectbox2" data-value="12">
+								<div data-value="1">Option 1</div>
+								<div data-value="2">Option 2</div>
+								<div data-value="3">Option 3</div>
+							</div>
+							<div class="col-sm-2">
+								<button class="btn btn-primary btn-sm">Buscar</button>
+							</div>
+							<!-- FIM BLOCO 3 -->
+							<br class="clear"/>
+						</div>
+					</div>
+				</div>
+				<!-- FIM BUSCA RAPIDA -->
+				
+				<!-- BLOCO CONTEUDO PROPRIEDADE -->
+				<div class="col-md-6">
+					
+					<div class="well">
+
+						<div class="content-box-large">
+			  				<h4>Contato</h4>
+							<hr>
+			  				<div class="panel-body">
+								<form class="" role="form">
+									<div class="form-group">
+										<label for="inputNome3" class="control-label">Nome</label>
+										<input type="text" class="form-control" id="inputNome3" placeholder="Nome">
+									</div>
+									<div class="form-group">
+										<label for="inputEmail3" class="control-label">E-mail</label>
+										<input type="email" class="form-control" id="inputEmail3" placeholder="E-mail">
+									</div>
+									<div class="form-group">
+										<label for="inputPhone3" class="control-label">Telefone</label>
+										<input type="text" class="form-control" id="inputPhone3" placeholder="Telefone" data-mask="(999) 9999-9999" data-mask-placeholder="X">
+									</div>
+									<div class="form-group">
+										<label for="inputCellPhone3" class="control-label">Celular</label>
+										<input type="text" class="form-control" id="inputCellPhone3" placeholder="Celular" data-mask="(999) 99999-9999" data-mask-placeholder="X">
+									</div>
+									<div class="form-group">
+										<label class="control-label">Mensagem</label>
+										<textarea class="form-control" placeholder="Mensagem" rows="3"></textarea>
+									</div>
+									<div class="form-group">
+										<button type="submit" class="btn btn-success">Enviar</button>
+									</div>
+								</form>
+			  				</div>
+			  			</div>
+
+					</div>
+				</div>
+				<!-- FIM BLOCO -->
+				
+				<!-- BLOCO TELEFONES -->
+				<div class="col-md-6">
+					<div class="content-box-large telefones">
+
+						<h4>Telefones</h4>
+						<hr>
+						<a href="tel:35362188502">(35) 3621-8502</a> <br>
+						<a href="tel:3599860422">(35) 9986-0422</a> <br>
+						<br><h4>E-mail</h4>
+						<hr>
+						<a href="mailto:atendimento@portalimoveisitajuba.com.br">atendimento@portalimoveisitajuba.com.br</a> <br>
+						<br>
+						<h4>Mapa</h4>
+						<hr>
+						<p>Praça Adolfo Olinto, 70 - Itajubá, MG</p>
+						<a target="_blank" href="https://maps.google.com.br/maps?q=portal+imoveis+itajub%C3%A1&amp;hl=pt-BR&amp;ie=UTF8&amp;ll=-22.42178,-45.453036&amp;spn=0.012992,0.022724&amp;sll=-20.68705,-46.327229&amp;sspn=0.052594,0.090895&amp;t=h&amp;hq=portal+imoveis&amp;hnear=Itajub%C3%A1+-+Minas+Gerais&amp;z=16&amp;iwloc=A">
+							<img class="img-responsive img-rounded" alt="" src="images/portal-imoveis-itajuba-localizacao-mapa.png">
+						</a>
+						<br/>
+
+					</div>
+				</div>
+				<!-- FIM BLOCO NEWSLATTER -->
+			
+            </div>
+			<div class="col-md-1"></div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+	<!-- FOOTER PARA O ARQUIVO FOOTER.PHP -->
+    <div class="container">
+
+		<!-- Footer -->
+        <footer>
+            <div class="row">
+				
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 bg-footer">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-5">
+							<div class="face"></div>
+							<div class="whats"></div>
+							<br class="clear" />
+							<p class="copy">Copyright &copy; 2016 <br> Portal Imóveis Itajubá - Sua imobiliária em Itajubá</p>
+						</div>
+						<div class="col-md-5">
+							<!-- BLOCO 5 -->
+							<h4 class="text-right">Contate-nos</h4>
+							<p class="text-right">
+							(35) 3621-8502 | (35) 9986-0422
+							<br>
+							<br>
+							atendimento@portalimoveisitajuba.com.br
+							<br/>
+							Praça Adolfo Olinto, 70 - Itajubá, MG
+							</p>
+							<!-- FIM BLOCO 5 -->
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/bootstrap-formhelpers.min.js"></script>
+
+    <script src="js/bootstrap-select.min.js"></script>
+	
+    <script src="js/forms.js"></script>
+	
+	<script src="js/jquery.maskedinput.min.js"></script>
+	
+	<!-- FlexSlider -->
+	<script defer src="js/jquery.flexslider.js"></script>
+
+	<script type="text/javascript">
+		$(window).load(function(){
+			$('.flexslider').flexslider({
+				animation: "slide",
+				controlNav: "thumbnails",
+				start: function(slider){
+					$('body').removeClass('loading');
+				}
+			});
+			
+			if ($('[data-mask]').length) {
+				$('[data-mask]')
+					.each(function () {
+
+						$this = $(this);
+						var mask = $this.attr('data-mask') || 'error...',
+							mask_placeholder = $this.attr('data-mask-placeholder') || 'X';
+
+						$this.mask(mask, {
+							placeholder: mask_placeholder
+						});
+					})
+			}
+		});
+	</script>
+
+</body>
+
+</html>
+<!-- FIM FOOTER -->
+

@@ -148,6 +148,23 @@ p.text-right {
 	margin: 2px 0 0 4px	
 }
 
+.empresa {
+	
+}
+
+.empresa img{
+	float: left;
+	margin-right: 20px;
+}
+
+.empresa p{
+	text-align: justify;
+}
+
+.telefones a {
+	color: #4b8308;
+}
+
 .caption {
     /* height: 130px; */
     overflow: hidden;
